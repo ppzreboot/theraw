@@ -10,6 +10,12 @@ Page({
     // 标签里的 data-* 可以在 event.target.dataset 中取到
     console.log(event.target.dataset.name)
   },
+  go() {
+    // https://developers.weixin.qq.com/miniprogram/dev/api/route/wx.navigateTo.html
+    wx.navigateTo({
+      url: '../anotherpage/index',
+    })
+  },
   onLoad() {
     console.log('loading')
   },
