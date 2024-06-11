@@ -1,1 +1,8 @@
-<view>hello world</view>
+<view>
+  <view>{{ userinfo.name }}</view>
+  <view>{{ userinfo.year }}</view>
+  <button
+    data-name="{{ userinfo.name }}"
+    bindtap="gogogo"
+  >tap</button>
+</view>
