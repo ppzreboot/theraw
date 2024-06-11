@@ -1,3 +1,8 @@
+const {
+  all: get_all_products,
+  insert: insert_product,
+} = require('../../db/product.js')
+
 Page({
   data: {
     userinfo: {
@@ -19,8 +24,14 @@ Page({
   onLoad() {
     console.log('loading')
   },
-  onReady() {
+  async onReady() {
     // onLoad 和 onReady 是两个“生命周期毁掉函数”，其中 onReady 类似 Vue 里的 mounted
     console.log('page ready')
+
+    await insert_product({
+      name: '大连樱桃',
+      time: new Date(),
+    })
+    console.log('all products', await get_all_products())
   },
 })
