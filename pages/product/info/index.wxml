@@ -1,3 +1,11 @@
-<view>
-  info
+<view wx:if="info">
+  <swiper indicator-dots="{{ info.photo_ids.length }}">
+    <swiper-item wx:for="{{ info.photo_ids }}" wx:key="index">
+      <image src="{{ item }}" mode="aspectFill" />
+    </swiper-item>
+  </swiper>
+
+  <view class="basic">
+    <view class="title">{{ info.name }}</view>
+  </view>
 </view>

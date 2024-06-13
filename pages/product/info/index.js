@@ -2,11 +2,13 @@ const cloud = require('../../../fp/cloud/index')
 
 Page({
   data: {
-    id: null,
+    info: null,
   },
+
   async load() {
-    const res = await cloud.call.get_product(this.options.id)
-    console.log({ res })
+    this.setData({
+      info: await cloud.call.get_product(this.options.id)
+    })
   },
   async onLoad() {
     await this.load()
@@ -14,7 +16,15 @@ Page({
   onShow() {
   },
   onShareAppMessage() {
-
+    return {
+      title: this.info.name + ': ' + this.info.price,
+      path: '/pages/product/info/index?id=' + this.options.id,
+    }
+  },
+  onShareTimeline() {
+    return {
+      title: this.info.name + ': ' + this.info.price,
+    }
   },
 })
 
