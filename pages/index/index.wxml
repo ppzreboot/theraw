@@ -1,6 +1,12 @@
 <view>
   <view class="products" wx:if="{{ list }}">
-    <view class="product" wx:for="{{ list }}">
+    <view
+      class="product"
+      wx:for="{{ list }}"
+      wx:key="_id"
+      data-id="{{ item._id }}"
+      bind:tap="on_tap_product"
+    >
       <image src="{{ item.photo_ids[0] }}" mode="aspectFill" />
       <view class="text">
         <view class="name">{{ item.name }}</view>

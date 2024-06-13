@@ -20,3 +20,13 @@ exports.nav_back = (delay = 1000) =>
   setTimeout(() =>
     wx.navigateBack()
   , delay)
+
+exports.choose_action = list =>
+  new Promise(res => {
+    wx.showActionSheet({
+      itemList: list.map(item => item[0]),
+      async success({ tapIndex }) {
+        res(await list[tapIndex][1]())
+      },
+    })
+  })
