@@ -3,11 +3,14 @@ const cloud = require('../../../fp/cloud/index')
 Page({
   data: {
     info: null,
+    comments: null,
   },
 
   async load() {
+    const data = await cloud.call.get_product(this.options.id)
     this.setData({
-      info: await cloud.call.get_product(this.options.id)
+      info: data,
+      comments: data.comments?.split('\n') || [],
     })
   },
   async onLoad() {

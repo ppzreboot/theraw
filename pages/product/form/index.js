@@ -59,10 +59,6 @@ function validate(basic_info) {
   try {
     tmp_validate(basic_info.name, '产品名称')
     tmp_validate(basic_info.price, '价格')
-    tmp_validate(basic_info.location, '产地')
-    tmp_validate(basic_info.pick_at, '采摘时间')
-    tmp_validate(basic_info.end_at, '下市时间')
-    tmp_validate(basic_info.sum, '供货量')
   } catch(errmsg) {
     return errmsg
   }

@@ -1,5 +1,6 @@
 page, .root {
   --gap: 30rpx;
+  --color-money: #ff5000;
 
   line-height: 1;
 }
@@ -7,7 +8,9 @@ page, .root {
 page {
   padding: 0 var(--gap);
 }
-
+.fullwidth {
+  margin-left: calc(50% - 50vw);
+}
 page, view {
   box-sizing: border-box;
 }

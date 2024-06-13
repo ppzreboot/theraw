@@ -33,7 +33,7 @@ page {
   font-weight: 500;
 }
 .product .text .price {
-  color: #ff5000;
+  color: var(--color-money);
   margin-top: 20rpx;
   font-size: small;
 }
@@ -44,6 +44,7 @@ page {
   height: calc((750rpx - var(--gap) * 3) / 2);
 }
 
-button.new_product {
-  margin-top: 3em;
+.new_product {
+  display: block;
+  margin: 3em auto;
 }

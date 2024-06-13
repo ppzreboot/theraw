@@ -18,8 +18,7 @@
     </view>
   </view>
   
-
-  <button type="primary" class="new_product">
-    <navigator url="../product/form/index">新品上架</navigator>
-  </button>
+  <navigator url="../product/form/index" class="new_product">
+    <button type="primary">新品上架</button>
+  </navigator>
 </view>

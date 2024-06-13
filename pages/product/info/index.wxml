@@ -1,11 +1,36 @@
 <view wx:if="info">
-  <swiper indicator-dots="{{ info.photo_ids.length }}">
+  <swiper class="fullwidth" indicator-dots="{{ info.photo_ids.length }}">
     <swiper-item wx:for="{{ info.photo_ids }}" wx:key="index">
       <image src="{{ item }}" mode="aspectFill" />
     </swiper-item>
   </swiper>
 
   <view class="basic">
+    <view class="price">{{ info.price }}</view>
     <view class="title">{{ info.name }}</view>
+    <!-- 右边显示上架状态 -->
+    <view class="kvs">
+      <view class="kv" wx:if="{{ item.location }}">
+        <view class="key">产地</view>
+        <view class="val">{{ item.location }}</view>
+      </view>
+      <view class="kv" wx:if="{{ item.pick_at }}">
+        <view class="key">采摘时间</view>
+        <view class="val">{{ item.pick_at }}</view>
+      </view>
+      <view class="kv" wx:if="{{ item.end_at }}">
+        <view class="key">下市时间</view>
+        <view class="val">{{ item.end_at }}</view>
+      </view>
+      <view class="kv" wx:if="{{ item.sum }}">
+        <view class="key">供货量</view>
+        <view class="val">{{ item.sum }}</view>
+      </view>
+    </view>
+    <view class="comment">
+      <view wx:for="{{ comments }}" wx:key="index">
+        {{ item }}
+      </view>
+    </view>
   </view>
 </view>

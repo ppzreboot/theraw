@@ -6,7 +6,7 @@
     "pages/anotherpage/index"
   ],
   "window": {
-    "navigationBarTitleText": "我家地里的",
+    "navigationBarTitleText": "我家的水果",
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black"
   },

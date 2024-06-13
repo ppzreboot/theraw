@@ -1,5 +1,8 @@
 @import '/global.wxss';
 
+page {
+  padding-bottom: 3em;
+}
 .block {
   margin-bottom: 3em;
 }
@@ -37,6 +40,12 @@
   align-items: center;
   padding: .8em 0;
   border-bottom: 1px solid #f8f8f8;
+}
+.basic textarea {
+  padding: .6em 0;
+  line-height: 1.6;
+  display: block;
+  width: 100%;
 }
 .basic label input {
   flex: 1;
