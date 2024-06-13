@@ -2,9 +2,11 @@
   "pages": [
     "pages/index/index",
     "pages/product/form/index",
+    "pages/product/info/index",
     "pages/anotherpage/index"
   ],
   "window": {
+    "navigationBarTitleText": "我家地里的",
     "navigationBarBackgroundColor": "#ffffff",
     "navigationBarTextStyle": "black"
   },
