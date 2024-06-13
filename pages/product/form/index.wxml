@@ -50,6 +50,6 @@
       type="primary"
       form-type="submit"
       class="submit"
-    >提交</button>
+    >上架</button>
   </view>
 </form>

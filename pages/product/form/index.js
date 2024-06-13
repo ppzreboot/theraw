@@ -1,5 +1,5 @@
 const db = require('../../../db/index')
-const { toast } = require('../../../fp/util')
+const { show_toast, generate_id, show_loading, nav_back } = require('../../../fp/util')
 
 Page({
   data: {
@@ -11,18 +11,38 @@ Page({
         .concat(list.detail)
     })
   },
-  start_submit(evt) {
+  async start_submit(evt) {
     if (this.data.photos.length == 0) {
-      toast('请选择照片')
+      show_toast('请选择照片')
       return
     }
     const basic = evt.detail.value
     const errmsg = validate(basic)
     if (errmsg) {
-      toast(errmsg)
+      show_toast(errmsg)
       return
     }
+
     // 存
+    show_loading('上传图片...')
+    const res = await Promise.all(this.data.photos.map(
+      photo =>
+        wx.cloud.uploadFile({
+          cloudPath: generate_id() + '.' + photo.tempFilePath.split('.').at(-1),
+          filePath: photo.tempFilePath,
+        })
+    ))
+    const photo_ids = res.map(item => item.fileID)
+
+    const hide_loading = show_loading('上传数据...')
+    await db.product.add({
+      photo_ids,
+      ...basic,
+    })
+
+    hide_loading()
+    show_toast('已上架')
+    nav_back()
   },
   async onLoad() {
   },
