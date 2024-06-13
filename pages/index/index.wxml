@@ -1,11 +1,3 @@
 <view>
-  <view>{{ userinfo.name }}</view>
-  <view>{{ userinfo.year }}</view>
-  <button
-    data-name="{{ userinfo.name }}"
-    bindtap="gogogo"
-  >tap</button>
-
-  <navigator url="../anotherpage/index">navigator 类似 html 里的 a 标签</navigator>
-  <button bindtap="go">js 跳转演示</button>
+  
 </view>
