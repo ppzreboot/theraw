@@ -9,7 +9,7 @@ Page({
       list: await db.product.all()
     })
   },
-  async onLoad() {
+  async onShow() {
     await this.load()
-  }
+  },
 })

@@ -1,0 +1,48 @@
+@import "/global.wxss";
+
+page {
+  background: #f8f8f8;
+  padding-bottom: 3em;
+}
+
+.nothing {
+  margin-top: 5em;
+  width: 100%;
+  text-align: center;
+  opacity: .3;
+  line-height: 2;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.product {
+  background: #ffffff;
+  width: calc((750rpx - var(--gap) * 3) / 2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.product .text {
+  padding: 20rpx 30rpx;
+}
+.product .text .name {
+  font-weight: 500;
+}
+.product .text .price {
+  color: #ff5000;
+  margin-top: 20rpx;
+  font-size: small;
+}
+
+.product image {
+  background: #eee;
+  width: calc((750rpx - var(--gap) * 3) / 2);
+  height: calc((750rpx - var(--gap) * 3) / 2);
+}
+
+button.new_product {
+  margin-top: 3em;
+}
