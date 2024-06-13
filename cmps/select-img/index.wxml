@@ -1,0 +1,4 @@
+<view class="upload-img" bind:tap="start_upload">
+  <view class="x"></view>
+  <view class="y"></view>
+</view>

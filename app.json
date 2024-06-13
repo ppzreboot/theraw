@@ -5,6 +5,8 @@
     "pages/anotherpage/index"
   ],
   "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "componentFramework": "glass-easel",

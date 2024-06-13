@@ -1,0 +1,28 @@
+.upload-img {
+  width: calc((750rpx - 4 * var(--gap)) / 3);
+  height: calc((750rpx - 4 * var(--gap)) / 3);
+  background-color: #f0f0f0;
+  position: relative;
+  border-radius: 2px;
+}
+.x {
+  position: absolute;
+  width: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  bottom: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.y {
+  position: absolute;
+  height: 4px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  right: 10px;
+  border-radius: 2px;
+  background-color: #fff;
+}

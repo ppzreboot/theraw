@@ -1,0 +1,19 @@
+page, .root {
+  --gap: 30rpx;
+
+  line-height: 1;
+}
+
+page {
+  padding: 0 var(--gap);
+}
+
+page, view {
+  box-sizing: border-box;
+}
+
+input {
+  line-height: 1;
+  font-size: inherit;
+  height: 1em;
+}

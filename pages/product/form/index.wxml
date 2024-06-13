@@ -1,3 +1,55 @@
-<view>
-  seller
-</view>
+<form bind:submit="start_submit">
+  <view class="block">
+    <view class="{{ 'title ' + (photos ? 'completed' : '') }}">
+      <text>第一步：</text>
+      <text>选择产品图片</text>
+    </view>
+    <view class="photos">
+      <image
+        wx:for="{{photos}}"
+        wx:key="tempFilePath"
+        src="{{item.tempFilePath}}"
+      />
+      <select-img bind:new-selected="new_photo" />
+    </view>
+  </view>
+
+  <view class="block" wx:if="{{ photos }}">
+    <view class="title">
+      <text>第二步：</text>
+      <text>填写基本信息</text>
+    </view>
+    <view class="basic">
+      <label>
+        <text>名称</text>
+        <input placeholder="输入产品名称：樱桃？苹果？" name="name" />
+      </label>
+      <label>
+        <text>价格</text>
+        <input placeholder="输入价格：5 元/斤？10 元/箱" name="price" />
+      </label>
+      <label>
+        <text>产地</text>
+        <input placeholder="大连？烟台？洛川？大沙河？" name="location" />
+      </label>
+      <label>
+        <text>采摘时间</text>
+        <input placeholder="6 月 8 号？下单后立刻去摘？" name="pick_at" />
+      </label>
+      <label>
+        <text>下市时间</text>
+        <input placeholder="8 月 6 号？四季供货？" name="end_at" />
+      </label>
+      <label>
+        <text>供货量</text>
+        <input placeholder="200 棵樱桃树？10 亩苹果树？" name="sum" />
+      </label>
+    </view>
+
+    <button
+      type="primary"
+      form-type="submit"
+      class="submit"
+    >提交</button>
+  </view>
+</form>
