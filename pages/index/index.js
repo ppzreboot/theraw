@@ -1,5 +1,5 @@
 const db = require('../../db/index')
-const { choose_action } = require('../../fp/util')
+const { choose_action, nav2 } = require('../../fp/util')
 
 Page({
   data: {
@@ -17,7 +17,7 @@ Page({
         console.log('上下架', id)
       }],
       ['编辑', () => {
-        console.log('editing', id)
+        nav2('/pages/product/form/index?id=' + id)
       }],
     ])
   },

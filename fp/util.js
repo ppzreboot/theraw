@@ -20,6 +20,8 @@ exports.nav_back = (delay = 1000) =>
   setTimeout(() =>
     wx.navigateBack()
   , delay)
+exports.nav2 = url =>
+  wx.navigateTo({ url })
 
 exports.choose_action = list =>
   new Promise(res => {

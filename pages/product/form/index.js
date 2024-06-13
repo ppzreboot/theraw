@@ -37,6 +37,7 @@ Page({
     const hide_loading = show_loading('上传数据...')
     await db.product.add({
       photo_ids,
+      selling: true,
       ...basic,
     })
 
