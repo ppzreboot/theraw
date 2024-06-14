@@ -1,7 +1,7 @@
 .upload-img {
   width: calc((750rpx - 4 * var(--gap)) / 3);
   height: calc((750rpx - 4 * var(--gap)) / 3);
-  background-color: #f0f0f0;
+  background-color: #eee;
   position: relative;
   border-radius: 2px;
 }

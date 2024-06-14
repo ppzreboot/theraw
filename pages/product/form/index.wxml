@@ -23,7 +23,7 @@
     <view class="basic">
       <label>
         <text>名称</text>
-        <input placeholder="输入产品名称" name="name" />
+        <input placeholder="输入名称" name="name" />
       </label>
       <label>
         <text>价格</text>
@@ -31,7 +31,7 @@
       </label>
       <label>
         <text>产地</text>
-        <input placeholder="大连？洛川？大沙河？" name="location" />
+        <input placeholder="请输入" name="location" />
       </label>
       <label>
         <text>采摘时间</text>
@@ -39,11 +39,11 @@
       </label>
       <label>
         <text>下市时间</text>
-        <input name="end_at" />
+        <input placeholder="请输入" name="end_at" />
       </label>
       <label>
         <text>供货量</text>
-        <input name="sum" />
+        <input placeholder="请输入" name="sum" />
       </label>
       <textarea placeholder="输入备注" name="comments" auto-height />
     </view>
@@ -53,5 +53,11 @@
       form-type="submit"
       class="submit"
     >上架</button>
+  </view>
+
+  <view class="tip">
+    提示：人们往往误以为“信息越丰富，就越容易看懂”。
+    但实际上，<text>信息越多，就越看不懂！</text>
+    建议少说，只说重点。
   </view>
 </form>
