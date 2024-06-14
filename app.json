@@ -3,6 +3,7 @@
     "pages/index/index",
     "pages/product/form/index",
     "pages/product/info/index",
+    "pages/buy/form/index",
     "pages/anotherpage/index"
   ],
   "window": {

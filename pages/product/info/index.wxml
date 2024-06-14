@@ -7,30 +7,36 @@
 
   <view class="basic">
     <view class="price">{{ info.price }}</view>
-    <view class="title">{{ info.name }}</view>
-    <!-- 右边显示上架状态 -->
+    <view class="l2">
+      <view class="title">{{ info.name }}</view>
+      <view class="{{ info.selling ? 'hot' : 'hot not' }}">{{
+        info.selling ? '正在热卖 🔥' : '已下架'
+      }}</view>
+    </view>
     <view class="kvs">
-      <view class="kv" wx:if="{{ item.location }}">
+      <view class="kv" wx:if="{{ info.location }}">
         <view class="key">产地</view>
-        <view class="val">{{ item.location }}</view>
+        <view class="val">{{ info.location }}</view>
       </view>
-      <view class="kv" wx:if="{{ item.pick_at }}">
+      <view class="kv" wx:if="{{ info.pick_at }}">
         <view class="key">采摘时间</view>
-        <view class="val">{{ item.pick_at }}</view>
+        <view class="val">{{ info.pick_at }}</view>
       </view>
-      <view class="kv" wx:if="{{ item.end_at }}">
+      <view class="kv" wx:if="{{ info.end_at }}">
         <view class="key">下市时间</view>
-        <view class="val">{{ item.end_at }}</view>
+        <view class="val">{{ info.end_at }}</view>
       </view>
-      <view class="kv" wx:if="{{ item.sum }}">
+      <view class="kv" wx:if="{{ info.sum }}">
         <view class="key">供货量</view>
-        <view class="val">{{ item.sum }}</view>
+        <view class="val">{{ info.sum }}</view>
       </view>
     </view>
-    <view class="comment">
+    <view class="comments">
       <view wx:for="{{ comments }}" wx:key="index">
         {{ item }}
       </view>
     </view>
   </view>
+
+  <button type="primary" class="make_order">下单</button>
 </view>

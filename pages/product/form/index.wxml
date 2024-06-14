@@ -45,7 +45,7 @@
         <text>供货量</text>
         <input placeholder="请输入" name="sum" />
       </label>
-      <textarea placeholder="输入备注" name="comments" auto-height />
+      <textarea placeholder="输入备注（支持换行和 emoji）" name="comments" auto-height />
     </view>
 
     <button

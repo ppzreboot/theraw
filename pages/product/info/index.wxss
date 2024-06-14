@@ -1,5 +1,9 @@
 @import "/global.wxss";
 
+page {
+  padding-bottom: 3em;
+}
+
 swiper, swiper image {
   width: 750rpx;
   height: 750rpx;
@@ -7,14 +11,51 @@ swiper, swiper image {
 }
 
 .basic {
-  padding: var(--gap) 0;
+  margin-top: calc(2 * var(--gap));
 }
 .basic .price {
-  font-size: large;
-  font-weight: 500;
+  font-size: x-large;
+  font-weight: 600;
   color: var(--color-money);
+}
+.basic .l2 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .basic .title {
   font-weight: 500;
-  line-height: 3;
+  margin-top: .6em;
+}
+.basic .hot {
+  font-size: xx-small;
+}
+.basic .hot.not {
+  opacity: .6;
+}
+
+.kvs {
+  margin: calc(2 * var(--gap)) 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+.kvs .kv {
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: .5em;
+  font-size: small;
+}
+.kvs .key {
+  opacity: .388;
+}
+.comments {
+  line-height: 1.6;
+}
+
+button.make_order {
+  margin: 3em auto;
 }

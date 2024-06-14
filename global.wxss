@@ -6,7 +6,8 @@ page, .root {
 }
 
 page {
-  padding: 0 var(--gap);
+  padding-left: var(--gap);
+  padding-right: var(--gap);
 }
 .fullwidth {
   margin-left: calc(50% - 50vw);
