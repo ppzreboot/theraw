@@ -38,5 +38,5 @@
     </view>
   </view>
 
-  <button type="primary" class="make_order">下单</button>
+  <anchor classname="make_order" url="../../buy/form">下单</anchor>
 </view>

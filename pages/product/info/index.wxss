@@ -56,6 +56,6 @@ swiper, swiper image {
   line-height: 1.6;
 }
 
-button.make_order {
+.make_order {
   margin: 3em auto;
 }
