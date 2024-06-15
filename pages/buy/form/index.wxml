@@ -1,4 +1,8 @@
 <view>
+  <textarea
+    class="details"
+    placeholder="输入备注信息，如 “几斤” 或 “几箱” 或 “钟爱酸口”……"
+  />
   <view
     wx:if="{{ address }}"
     class="address"

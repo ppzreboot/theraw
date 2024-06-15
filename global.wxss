@@ -3,6 +3,7 @@ page, .root {
   --color-money: #ff5000;
   --gray-bg: #f8f8f8;
   --border-radius: .5em;
+  --line-height: 1.7;
 
   line-height: 1;
 }
@@ -14,7 +15,7 @@ page {
 .fullwidth {
   margin-left: calc(50% - 50vw);
 }
-page, view {
+page, view, textarea {
   box-sizing: border-box;
 }
 
