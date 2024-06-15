@@ -1,2 +1,24 @@
 <view>
+  <view
+    wx:if="{{ address }}"
+    class="address"
+    bind:tap="choose_address"
+  >
+    <view class="l1">
+      <view class="username">{{ address.userName }}</view>
+      <view>{{ formatted_tel }}</view>
+    </view>
+    <view class="l2">
+      <view>{{ address.provinceName }}</view>
+      <view>{{ address.cityName }}</view>
+      <view>{{ address.countyName }}</view>
+    </view>
+    <view class="l3">{{ address.detailInfoNew }}</view>
+  </view>
+  <button
+    type="primary"
+    plain
+    bind:tap="choose_address"
+    class="choose_address"
+  >选择收货地址</button>
 </view>

@@ -1,6 +1,8 @@
 page, .root {
   --gap: 30rpx;
   --color-money: #ff5000;
+  --gray-bg: #f8f8f8;
+  --border-radius: .5em;
 
   line-height: 1;
 }

@@ -6,6 +6,9 @@
     "pages/buy/form/index",
     "pages/anotherpage/index"
   ],
+  "requiredPrivateInfos": [
+    "chooseAddress"
+  ],
   "window": {
     "navigationBarTitleText": "我家的水果",
     "navigationBarBackgroundColor": "#ffffff",

@@ -1,0 +1,30 @@
+@import '/global.wxss';
+
+page {
+  background-color: var(--gray-bg);
+}
+.address {
+  margin: var(--gap) 0;
+  padding: calc(var(--gap) / 2) var(--gap);
+  background-color: #fff;
+  line-height: 2;
+  border-radius: var(--border-radius);
+}
+.address .l1 {
+  display: flex;
+  justify-content: space-between;
+}
+.address .l1 .username {
+  font-size: large;
+  font-weight: 500;
+}
+.address .l2 {
+  display: flex;
+}
+.address .l2 view {
+  margin-right: .3em;
+}
+
+.choose_address {
+  margin: var(--gap) 0;
+}
