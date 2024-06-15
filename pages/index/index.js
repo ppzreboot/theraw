@@ -1,14 +1,16 @@
 const db = require('../../db/index')
-const { choose_action, nav2 } = require('../../fp/util')
+const { choose_action, nav2, show_loading } = require('../../fp/util')
 
 Page({
   data: {
     list: null,
   },
   async load() {
+    const hide_loading = show_loading()
     this.setData({
       list: await db.product.all()
     })
+    hide_loading()
   },
   async onShow() {
     await this.load()

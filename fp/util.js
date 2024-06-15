@@ -1,7 +1,7 @@
 exports.show_toast = (title, icon = 'none') =>
   wx.showToast({ title, icon })
 
-exports.show_loading = title => {
+exports.show_loading = (title = '加载中') => {
   wx.showLoading({ title })
   return wx.hideLoading
 }
