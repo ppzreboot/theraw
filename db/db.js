@@ -7,8 +7,13 @@ class Collection {
   #get() {
     return wx.cloud.database().collection(this.#name)
   }
+  async get(id) {
+    const { data } = await this.#get().doc(id).get()
+    return data
+  }
   async add(data) {
-    return await this.#get().add({ data })
+    const { _id } = await this.#get().add({ data })
+    return _id
   }
   async all() {
     const { data } = await this.#get().get()

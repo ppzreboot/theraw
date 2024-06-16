@@ -20,6 +20,10 @@ exports.nav_back = (delay = 1000) =>
   setTimeout(() =>
     wx.navigateBack()
   , delay)
+exports.redirect = (url, delay = 1000) =>
+  setTimeout(() =>
+    wx.redirectTo({ url })
+  , delay)
 exports.nav2 = url =>
   wx.navigateTo({ url })
 
