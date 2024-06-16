@@ -35,6 +35,6 @@ page {
   margin-right: .3em;
 }
 
-.choose_address {
-  margin: var(--gap) 0;
+.bottom {
+  margin: calc(2 * var(--gap)) 0;
 }

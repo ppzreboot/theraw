@@ -12,5 +12,5 @@ Page({
             + 'xxxx' + address.telNumber.slice(-4)
         })
     })
-  }
+  },
 })

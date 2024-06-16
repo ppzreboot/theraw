@@ -20,9 +20,16 @@
     <view class="l3">{{ address.detailInfoNew }}</view>
   </view>
   <button
+    wx:if="{{ !address }}"
     type="primary"
     plain
     bind:tap="choose_address"
-    class="choose_address"
+    class="bottom"
   >选择收货地址</button>
+  <button
+    wx:if="{{ address }}"
+    type="primary"
+    bind:tap="choose_address"
+    class="bottom"
+  >确认订单</button>
 </view>
