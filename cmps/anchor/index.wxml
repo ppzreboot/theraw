@@ -1,5 +1,5 @@
 <navigator url="{{ url }}" class="{{ classname }}">
-  <button type="{{ type || 'primary' }}">
+  <button type="{{ type }}">
     <slot />
   </button>
 </navigator>

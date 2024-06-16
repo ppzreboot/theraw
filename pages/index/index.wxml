@@ -1,24 +1,4 @@
 <view>
-  <view class="products" wx:if="{{ list }}">
-    <navigator
-      class="product"
-      wx:for="{{ list }}"
-      wx:key="_id"
-      url="{{ '../product/info/index?id=' + item._id }}"
-    >
-      <image src="{{ item.photo_ids[0] }}" mode="aspectFill" />
-      <view class="text">
-        <view class="name">{{ item.name }}</view>
-        <view class="price">¥{{ item.price }}</view>
-      </view>
-    </navigator>
-    <view wx:if="{{ list.length == 0 }}" class="nothing">
-      <view>如果你家也有樱桃苹果梨、香蕉波拿那</view>
-      <view>欢迎上架，无门槛</view>
-    </view>
-  </view>
-  
-  <navigator url="../product/form/index" class="new_product">
-    <button type="primary">新品上架</button>
-  </navigator>
+  <anchor url="../selling/index">我是卖家</anchor>
+  <anchor url="../buy/order/list/index">我是买家</anchor>
 </view>

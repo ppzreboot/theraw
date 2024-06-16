@@ -1,50 +1,8 @@
-@import "/global.wxss";
+@import '/global.wxss';
 
 page {
-  background: #f8f8f8;
-  padding-top: var(--gap);
-  padding-bottom: 3em;
+  padding-top: 30vh;
 }
-
-.nothing {
-  margin-top: 5em;
-  width: 100%;
-  text-align: center;
-  opacity: .3;
-  line-height: 2;
-}
-.products {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-}
-
-.product {
-  background: #ffffff;
-  width: calc((750rpx - var(--gap) * 3) / 2);
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.product .text {
-  padding: 20rpx 30rpx;
-}
-.product .text .name {
-  font-weight: 500;
-}
-.product .text .price {
-  color: var(--color-money);
-  margin-top: 20rpx;
-  font-size: small;
-}
-
-.product image {
-  background: #eee;
-  width: calc((750rpx - var(--gap) * 3) / 2);
-  height: calc((750rpx - var(--gap) * 3) / 2);
-}
-
-.new_product {
-  display: block;
-  margin: 3em auto;
+button {
+  margin-bottom: var(--gap);
 }

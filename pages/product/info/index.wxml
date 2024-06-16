@@ -38,5 +38,5 @@
     </view>
   </view>
 
-  <anchor classname="make_order" url="{{ '../../buy/form/index?id=' + info._id }}">下单</anchor>
+  <anchor type="primary" classname="make_order" url="{{ '../../buy/form/index?id=' + info._id }}">下单</anchor>
 </view>
