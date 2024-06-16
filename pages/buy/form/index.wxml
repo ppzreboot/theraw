@@ -9,7 +9,7 @@
     bind:tap="choose_address"
   >
     <view class="l1">
-      <view class="username">{{ address.userName }}</view>
+      <view class="username">{{ formatted_name }}</view>
       <view>{{ formatted_tel }}</view>
     </view>
     <view class="l2">
