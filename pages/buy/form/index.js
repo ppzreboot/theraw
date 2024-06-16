@@ -3,6 +3,12 @@ Page({
     address: null,
     formatted_name: null,
     formatted_tel: null,
+    comments: '',
+  },
+  on_comments_input(evt) {
+    this.setData({
+      comments: evt.detail.value,
+    })
   },
   choose_address() {
     wx.chooseAddress({
@@ -15,5 +21,8 @@ Page({
             + 'xxxx' + address.telNumber.slice(-4)
         })
     })
+  },
+  submit_order() {
+    console.log(this.options, this.data.address, this.data.comments)
   },
 })

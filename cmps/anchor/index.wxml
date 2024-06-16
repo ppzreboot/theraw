@@ -1,4 +1,4 @@
-<navigator url="{{ url + '/index' }}" class="{{ classname }}">
+<navigator url="{{ url }}" class="{{ classname }}">
   <button type="{{ type || 'primary' }}">
     <slot />
   </button>

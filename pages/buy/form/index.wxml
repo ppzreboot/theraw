@@ -1,6 +1,8 @@
 <view>
   <textarea
     class="details"
+    value="{{ comments }}"
+    bind:input="on_comments_input"
     placeholder="输入备注信息，如 “几斤” 或 “几箱” 或 “钟爱酸口”……"
   />
   <view
@@ -29,7 +31,7 @@
   <button
     wx:if="{{ address }}"
     type="primary"
-    bind:tap="choose_address"
+    bind:tap="submit_order"
     class="bottom"
   >确认订单</button>
 </view>
