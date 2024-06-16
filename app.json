@@ -5,6 +5,7 @@
     "pages/product/info/index",
     "pages/buy/form/index",
     "pages/buy/order/info/index",
+    "pages/buy/order/list/index",
     "pages/anotherpage/index"
   ],
   "requiredPrivateInfos": [

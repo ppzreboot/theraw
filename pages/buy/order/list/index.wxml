@@ -1,0 +1,6 @@
+<view class="orders">
+  <view class="order" wx:for="{{ list }}" wx:key="index">
+    {{ item.order.comments[0] }}
+    {{ item.product.name }}
+  </view>
+</view>

@@ -39,3 +39,5 @@ exports.choose_action = list =>
 
 exports.next_tick = () =>
   new Promise(res => wx.nextTick(res))
+
+exports.db_command = wx.cloud.database().command
