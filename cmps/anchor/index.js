@@ -3,5 +3,6 @@ Component({
     classname: String,
     url: String,
     type: String,
+    plain: Boolean,
   },
 })

@@ -44,7 +44,9 @@ page {
   height: calc((750rpx - var(--gap) * 3) / 2);
 }
 
-.new_product {
-  display: block;
-  margin: 3em auto;
+.navs {
+  margin-top: calc(3 * var(--gap));
+}
+.navs navigator {
+  margin-bottom: var(--gap);
 }

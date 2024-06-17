@@ -18,7 +18,8 @@
     </view>
   </view>
   
-  <navigator url="../product/form/index" class="new_product">
-    <button type="primary">新品上架</button>
-  </navigator>
+  <view class="navs">
+    <anchor type="primary" url="../product/form/index">新品上架</anchor>
+    <anchor type="primary" plain url="../order/index">全部订单</anchor>
+  </view>
 </view>
