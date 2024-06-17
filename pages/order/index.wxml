@@ -3,6 +3,8 @@
     wx:for="{{ list }}"
     wx:key="index"
     class="order"
+    data-id="{{ item.order._id }}"
+    bind:tap="ontap_order"
   >
     <view class="l1">
       <view class="buyer">
