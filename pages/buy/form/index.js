@@ -34,6 +34,6 @@ Page({
     })
     hide_loading()
     show_toast('订单已提交')
-    redirect('../order/info/index?id=' + id)
+    redirect('../order/list/index')
   },
 })

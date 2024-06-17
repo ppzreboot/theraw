@@ -8,7 +8,7 @@ exports.retrieve_order = async function(id) {
   return { order, product }
 }
 
-exports.retrieve_orders = async function() {
+exports.retrieve_orders = async function(reverse = true) {
   const orders = await db.order.all()
   format_list_date(orders)
   for (const o of orders) { // 普通用户不需要知道历史记录
@@ -22,8 +22,12 @@ exports.retrieve_orders = async function() {
   const map = new Map()
   for (const p of products)
     map.set(p._id, p)
-  return orders.map(order => ({
+  
+  const list = orders.map(order => ({
     order,
     product: map.get(order.product_id),
   }))
+  if (reverse)
+    list.reverse()
+  return list
 }
