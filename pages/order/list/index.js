@@ -1,5 +1,5 @@
-const { choose_action } = require("../../fp/util")
-const sell = require("../../services/sell")
+const { choose_action } = require('../../../fp/util')
+const sell = require('../../../services/sell')
 
 Page({
   data: {

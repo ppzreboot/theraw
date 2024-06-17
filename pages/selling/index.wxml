@@ -20,6 +20,6 @@
   
   <view class="navs">
     <anchor type="primary" url="../product/form/index">新品上架</anchor>
-    <anchor type="primary" plain url="../order/index">全部订单</anchor>
+    <anchor type="primary" plain url="../order/list/index">全部订单</anchor>
   </view>
 </view>
