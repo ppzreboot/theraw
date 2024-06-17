@@ -12,6 +12,7 @@ class Collection {
     return data
   }
   async add(data) {
+    data._created_at = new Date()
     const { _id } = await this.#get().add({ data })
     return _id
   }

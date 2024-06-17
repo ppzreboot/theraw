@@ -59,7 +59,7 @@ button.submit {
 .tip {
   line-height: 1.5;
   margin: var(--gap);
-  font-size: xx-small;
+  font-size: x-small;
   opacity: .388;
 }
 .tip text {

@@ -14,5 +14,5 @@ Page({
       list: await retrieve_orders()
     })
     hide_loading()
-  }
+  },
 })

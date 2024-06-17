@@ -28,7 +28,7 @@ swiper, swiper image {
   margin-top: .6em;
 }
 .basic .hot {
-  font-size: xx-small;
+  font-size: x-small;
 }
 .basic .hot.not {
   opacity: .6;

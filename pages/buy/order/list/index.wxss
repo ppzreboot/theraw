@@ -1,0 +1,31 @@
+@import '/global.wxss';
+
+page {
+  background: var(--gray-bg);
+  padding: 0 0;
+}
+
+.order {
+  margin-top: calc(var(--gap) / 2);
+  background: #fff;
+  padding: var(--gap);
+}
+.order .l1 {
+  display: flex;
+  justify-content: space-between;
+}
+.order .l1 .title {
+  font-weight: 500;
+}
+.order .l1 .date {
+  font-size: small;
+  opacity: .6;
+}
+.order .comments {
+  margin: .3em 0;
+  line-height: 1.5;
+}
+.order .id {
+  font-size: x-small;
+  opacity: .3;
+}
