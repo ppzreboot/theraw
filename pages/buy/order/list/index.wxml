@@ -1,5 +1,10 @@
 <view class="orders">
-  <navigator class="order" wx:for="{{ list }}" wx:key="index">
+  <navigator
+    class="order"
+    wx:for="{{ list }}"
+    wx:key="index"
+    url="../info/index?id={{ item.order._id }}"
+  >
     <view class="l1">
       <view class="title">{{ item.product.name }}</view>
       <view class="date">{{ item.order.created_at }}</view>
