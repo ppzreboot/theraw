@@ -4,6 +4,7 @@
     "pages/selling/index",
     "pages/order/list/index",
     "pages/order/info/index",
+    "pages/order/form/index",
     "pages/product/form/index",
     "pages/product/info/index",
     "pages/buy/form/index",
