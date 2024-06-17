@@ -43,6 +43,8 @@ exports.next_tick = () =>
 exports.db_command = wx.cloud.database().command
 
 exports.format_date = date => {
+  if (!(date instanceof Date))
+    date = new Date(date)
   const p = n => n > 9 ? n : '0' + n
   const y = date.getFullYear()
   const m = date.getMonth() + 1
@@ -57,3 +59,10 @@ exports.format_list_date = list =>
   list.forEach(item =>
     item.created_at = exports.format_date(item._created_at)
   )
+
+exports.id_map = list => {
+  const map = new Map()
+  for (const item of list)
+    map.set(item._id, item)
+  return map
+}

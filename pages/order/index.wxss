@@ -1,0 +1,43 @@
+@import '/global.wxss';
+
+page {
+  background: var(--gray-bg);
+  padding: 0 0;
+}
+
+.order {
+  background: #fff;
+  margin-top: calc(var(--gap) / 2);
+  background: #fff;
+  padding: var(--gap);
+}
+
+.order .l1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.order .l1 .buyer {
+  display: flex;
+  align-items: flex-end;
+}
+.order .l1 .buyer .name {
+  font-weight: 500;
+}
+.order .l1 .buyer .address {
+  font-size: x-small;
+}
+.order .l1 .date {
+  opacity: .6;
+  font-size: small;
+}
+
+.order .l2 {
+  margin: .5em 0;
+  line-height: 1.5;
+}
+
+.order .id {
+  font-size: small;
+  opacity: .3;
+}

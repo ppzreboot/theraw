@@ -12,8 +12,11 @@ class Collection {
   // async add(data) {
   //   return await this.#get().add({ data })
   // }
-  async all() {
-    const { data } = await this.#get().get()
+  async all(where) {
+    let query = this.#get()
+    if (where)
+      query = query.where(where)
+    const { data } = await query.get()
     return data
   }
 
