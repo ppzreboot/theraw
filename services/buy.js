@@ -10,7 +10,6 @@ exports.retrieve_order = async function(id) {
 
 exports.retrieve_orders = async function(reverse = true) {
   const orders = await db.order.all()
-  format_list_date(orders)
   for (const o of orders) { // 普通用户不需要知道历史记录
     o.comments = o.comments.at(-1) // 仅展示最新修改后的内容即可
     o.address = o.address.at(-1)

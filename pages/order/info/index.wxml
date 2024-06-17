@@ -1,0 +1,10 @@
+<view wx:if="order" class="container">
+  <view><text>产品</text> {{product.name}} {{product.price}}</view>
+  <view><text>用户备注</text> {{ comments }}</view>
+  <view><text>下单时间</text> {{ order.created_at }}</view>
+
+  <view><text>收货人</text> {{address.userName}}</view>
+  <view><text>手机号码</text> {{address.telNumber}}</view>
+  <view><text>所在地区</text> {{address.provinceName}} {{address.cityName}} {{address.countyName}}</view>
+  <view><text>详细地址</text> {{address.detailInfo}}</view>
+</view>

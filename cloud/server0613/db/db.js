@@ -1,4 +1,5 @@
 const cloud = require('wx-server-sdk')
+const { format_date } = require('../utils')
 
 exports.Collection =
 class Collection {
@@ -9,19 +10,19 @@ class Collection {
   #get() {
     return cloud.database().collection(this.#name)
   }
-  // async add(data) {
-  //   return await this.#get().add({ data })
-  // }
+
   async all(where) {
     let query = this.#get()
     if (where)
       query = query.where(where)
     const { data } = await query.get()
+    data.forEach(item => item.created_at = format_date(item._created_at))
     return data
   }
 
   async get(id) {
     const { data } = await this.#get().doc(id).get()
+    data.created_at = format_date(data._created_at)
     return data
   }
 }

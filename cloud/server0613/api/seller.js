@@ -14,3 +14,9 @@ exports.get_orders = async (_, user) => {
   
   return { products, orders }
 }
+
+exports.retrieve_order = async id => {
+  const order = await db.order.get(id)
+  const product = await db.product.get(order.product_id)
+  return { order, product }
+}

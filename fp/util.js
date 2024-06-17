@@ -32,7 +32,12 @@ exports.choose_action = list =>
     wx.showActionSheet({
       itemList: list.map(item => item[0]),
       async success({ tapIndex }) {
-        res(await list[tapIndex][1]())
+        const job = list[tapIndex][1]
+        if (typeof job == 'string') { 
+          res()
+          exports.nav2(job)
+        } else
+          res(await job())
       },
     })
   })
