@@ -7,7 +7,7 @@ Page({
   },
 
   async load() {
-    const data = await cloud.call.get_product(this.options.id)
+    const data = await cloud.call.retrieve_product(this.options.id)
     this.setData({
       info: data,
       comments: data.comments?.split('\n') || [],

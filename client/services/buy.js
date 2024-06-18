@@ -1,10 +1,9 @@
 const db = require('../db/index')
 const { call } = require('../utils/cloud/index')
-const { db_command } = require('../utils/index')
 
 exports.retrieve_order = async function(id) {
   const order = await db.order.get(id)
-  const product = await call.get_product(order.product_id)
+  const product = await call.retrieve_product(order.product_id)
   return { order, product }
 }
 
