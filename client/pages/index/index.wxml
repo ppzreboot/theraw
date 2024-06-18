@@ -1,5 +1,5 @@
 <view>
-  <anchor url="../selling/index">我是卖家</anchor>
+  <anchor url="../sell/selling/index">我是卖家</anchor>
   <anchor url="../buy/order/list/index">我是买家</anchor>
   <button bind:tap="ontap_coder">我是码农</button>
 </view>

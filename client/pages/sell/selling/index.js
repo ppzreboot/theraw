@@ -1,5 +1,5 @@
-const db = require('../../db/index')
-const { show_loading } = require('../../utils/index')
+const db = require('../../../db/index')
+const { show_loading } = require('../../../utils/index')
 
 Page({
   data: {

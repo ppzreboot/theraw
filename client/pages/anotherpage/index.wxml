@@ -1,9 +1,0 @@
-<view>
-  <view>演示表单操作</view>
-  <input value="{{ name }}" bindinput="handle_input" />
-  <view>输入框里的值 {{ name }}</view>
-
-  <!-- 下面的组件用手机能看到效果 https://developers.weixin.qq.com/miniprogram/dev/component/input.html -->
-  <input type="number" confirm-type="send" />
-  <input type="digit" confirm-type="search" />
-</view>

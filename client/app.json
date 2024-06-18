@@ -1,16 +1,15 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/selling/index",
-    "pages/order/list/index",
-    "pages/order/info/index",
-    "pages/order/form/index",
-    "pages/product/form/index",
+    "pages/sell/selling/index",
+    "pages/sell/order/list/index",
+    "pages/sell/order/info/index",
+    "pages/sell/order/form/index",
+    "pages/sell/product/form/index",
     "pages/product/info/index",
     "pages/buy/form/index",
     "pages/buy/order/info/index",
-    "pages/buy/order/list/index",
-    "pages/anotherpage/index"
+    "pages/buy/order/list/index"
   ],
   "requiredPrivateInfos": [
     "chooseAddress"

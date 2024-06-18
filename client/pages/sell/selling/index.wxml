@@ -4,7 +4,7 @@
       class="product"
       wx:for="{{ list }}"
       wx:key="_id"
-      url="{{ '../product/info/index?id=' + item._id }}"
+      url="{{ '../../product/info/index?id=' + item._id }}"
     >
       <image src="{{ item.photo_ids[0] }}" mode="aspectFill" />
       <view class="text">

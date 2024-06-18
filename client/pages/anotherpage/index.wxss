@@ -1,5 +1,0 @@
-input {
-  display: block;
-  margin: 1rem;
-  border: 1px solid #eee;
-}
