@@ -1,5 +1,9 @@
 <view>
-  <picker>
+  <selector
+    options="{{ status_options }}"
+    value="{{ status_value }}"
+    bind:change="onchange_status"
+  />
 
-  </picker>
+  <button type="primary" ghost bind:tap="ontap_submit">提交</button>
 </view>

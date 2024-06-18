@@ -1,9 +1,11 @@
 const { choose_action } = require('../../../fp/util')
 const sell = require('../../../services/sell')
+const { order_status_map } = require('../../../const')
 
 Page({
   data: {
     list: null,
+    status_map: order_status_map(),
   },
   async load() {
     this.setData({

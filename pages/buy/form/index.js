@@ -29,6 +29,7 @@ Page({
     const hide_loading = show_loading('提交订单')
     const id = await db.order.add({
       product_id: this.options.id,
+      status: 'tosend',
       address: [this.data.address],
       comments: [this.data.comments],
     })

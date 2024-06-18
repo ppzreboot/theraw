@@ -1,0 +1,3 @@
+<picker range="{{ options }}" range-key="label" bind:change="onchange">
+  {{ label }}
+</picker>
