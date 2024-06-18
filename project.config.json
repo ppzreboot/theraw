@@ -25,6 +25,8 @@
     "tabSize": 2
   },
   "cloudfunctionRoot": "cloud/",
+  "miniprogramRoot": "client/",
   "appid": "wxfa77f216bcb71f9e",
-  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/"
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate/",
+  "srcMiniprogramRoot": "client/"
 }
