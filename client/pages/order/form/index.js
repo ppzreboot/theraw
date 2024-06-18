@@ -1,5 +1,5 @@
-const { show_toast } = require('../../../fp/util')
-const cloud = require('../../../fp/cloud/index')
+const { show_toast } = require('../../../utils/index')
+const cloud = require('../../../utils/cloud/index')
 const { order_status_options } = require('../../../const')
 
 Page({

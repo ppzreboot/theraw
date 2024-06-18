@@ -1,4 +1,4 @@
-const { choose_action } = require('../../../fp/util')
+const { choose_action } = require('../../../utils/index')
 const sell = require('../../../services/sell')
 const { order_status_map } = require('../../../const')
 

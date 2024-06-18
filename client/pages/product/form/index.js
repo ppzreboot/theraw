@@ -1,5 +1,5 @@
 const db = require('../../../db/index')
-const { show_toast, generate_id, show_loading, nav_back } = require('../../../fp/util')
+const { show_toast, generate_id, show_loading, nav_back } = require('../../../utils/index')
 
 Page({
   data: {

@@ -1,4 +1,4 @@
-const cloud = require('../../../fp/cloud/index')
+const cloud = require('../../../utils/cloud/index')
 
 Page({
   data: {

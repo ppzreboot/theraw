@@ -1,4 +1,4 @@
-const { format_date } = require('../fp/util')
+const { format_date } = require('../utils/index')
 
 exports.Collection =
 class Collection {

@@ -1,4 +1,4 @@
-const { show_loading } = require('../../../../fp/util')
+const { show_loading } = require('../../../../utils/index')
 const { retrieve_orders } = require('../../../../services/buy')
 
 Page({

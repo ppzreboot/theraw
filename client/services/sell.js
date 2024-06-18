@@ -1,5 +1,5 @@
-const { call } = require('../fp/cloud/index')
-const { id_map } = require('../fp/util')
+const { call } = require('../utils/cloud/index')
+const { id_map } = require('../utils/index')
 
 exports.retrieve_order = async (reverse = true) => {
   const { products, orders } = await call.get_orders()

@@ -1,5 +1,5 @@
 const db = require('../../../db/index')
-const { show_loading, show_toast, redirect } = require('../../../fp/util')
+const { show_loading, show_toast, redirect } = require('../../../utils/index')
 
 Page({
   data: {
