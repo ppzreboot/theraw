@@ -1,5 +1,5 @@
 const { show_loading } = require('../../../../utils/index')
-const { retrieve_orders } = require('../../../../services/buy')
+const buy = require('../../../../services/buy')
 
 Page({
   data: {
@@ -11,7 +11,7 @@ Page({
   async load() {
     const hide_loading = show_loading()
     this.setData({
-      list: await retrieve_orders()
+      list: await buy.retrieve_orders()
     })
     hide_loading()
   },

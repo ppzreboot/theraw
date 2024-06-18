@@ -7,6 +7,7 @@ console.log('starting cloud function')
 const router = [
   require('./api/product'),
   require('./api/seller'),
+  require('./api/buyer'),
 ].reduce(
   (router, mod) => {
     for (const route_name in mod) {

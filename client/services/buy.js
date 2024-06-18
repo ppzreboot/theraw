@@ -15,9 +15,7 @@ exports.retrieve_orders = async function(reverse = true) {
     o.address = o.address.at(-1)
   }
 
-  const products = await db.product.all({
-    _id: db_command.in(orders.map(o => o.product_id))
-  })
+  const products = await call.retrieve_products(orders.map(o => o.product_id))
   const map = new Map()
   for (const p of products)
     map.set(p._id, p)
